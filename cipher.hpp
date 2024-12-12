@@ -16,10 +16,10 @@ public:
         delete m_table;
     };
 
-    CreateTable(int key);
-    PrintTable();
-    SetInput(string str);
-    string GetOutput() {return m_output;}
-    Encrypt();
-    Decrypt();
+    void CreateTable(int key);
+    void PrintTable();
+    void SetInput(string str);
+    void string GetOutput() {return m_output;}
+    void Encrypt();
+    void Decrypt();
 };

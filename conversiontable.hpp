@@ -23,10 +23,10 @@ public:
     ~ConversionTable() {};
 
     //getters and setters
-    SetPair(char c1, char c2, int index);
+    void SetPair(char c1, char c2, int index);
     char GetSecond(int index);
     char GetFirst(int index);
-    PrintPairs();
+    void PrintPairs();
 
 };
 

@@ -1,6 +1,6 @@
 #include "cipher.hpp"
 
-Cipher::CreateTable(int key) {
+void Cipher::CreateTable(int key) {
     char first, second;
 
     for (size_t i = 0; i < 256; i++) {
@@ -12,15 +12,15 @@ Cipher::CreateTable(int key) {
     }
 }
 
-Cipher::PrintTable() {
+void Cipher::PrintTable() {
     m_table -> PrintPairs();
 }
 
-Cipher::SetInput(string str) {
+void Cipher::SetInput(string str) {
     m_input = str;
 }
 
-Cipher::Encrypt() {
+void Cipher::Encrypt() {
     char tmp, c2;
     m_output.clear();
 
@@ -31,7 +31,7 @@ Cipher::Encrypt() {
     }
 }
 
-Cipher::Decrypt() {
+void Cipher::Decrypt() {
     char tmp;
     m_output.clear();
 
